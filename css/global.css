@@ -1,3 +1,5 @@
+/* Resets */
+
 *,
 *::before,
 *::after {
@@ -14,4 +16,20 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+}
+
+/* Global Styles */
+
+:root {
+  --colors-black: hsl(0, 0%, 0%);
+  --colors-white: hsl(0, 0%, 95%);
+  --colors-gray: hsl(0, 0%, 77%);
+  --colors-light-gray: hsl(0, 0%, 60%);
+  --colors-light-green: hsl(177, 100%, 33%);
+  --colors-white-green: hsl(177, 26%, 96%);
+  --colors-light-black: hsl(0, 0%, 33%);
+  --colors-lucky-grey: hsl(0, 0%, 47%);
+  --colore-nero-black: hsl(0, 0%, 13%);
+  --colors-azureish-white: hsl(177, 39%, 91%);
+  --colors-light-bluish-cyan: hsl(175, 31%, 86%);
 }
