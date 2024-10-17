@@ -33,3 +33,7 @@ h6 {
   --colors-azureish-white: hsl(177, 39%, 91%);
   --colors-light-bluish-cyan: hsl(175, 31%, 86%);
 }
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
