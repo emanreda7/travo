@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #343a40; 
+    padding: 20px;
+  }
+  
+  .profile-logo {
+    width: 100px;
+  }
+  
+  .profile-name {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  .card {
+    border: 1px solid #444;
+  }
+  
+  .city-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .plan-section {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #travel-plan {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #travel-plan li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #343a40;
+    border-radius: 5px;
+  }
+  
+  .edit-btn {
+    margin-top: 20px;
+  }
+  
