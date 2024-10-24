@@ -450,6 +450,11 @@
       AOS.init();
     </script>
     <script>
+
+      document.getElementById("allblog").onclick = function () {
+        window.location.href = "pages/blogs.html";
+      };
+      
       if (localStorage.getItem("loggedIn") === "true") {
         localStorage.setItem("loggedIn", "true");
         window.onload = function () {
