@@ -46,7 +46,7 @@ var swiper = new Swiper(".mySwiper", {
 // _______________ for login from home page _________________
 let signbtn = document.getElementById("signinnav");
 signbtn.onclick = function () {
-  window.location.href = "login.html";
+  window.location.href = "/pages/login.html";
   // signbtn.style.display = "none";
 };
 
@@ -59,7 +59,6 @@ signbtn.onclick = function () {
 //   const userBtn = document.getElementById("navuser");
 //   const loginForm = document.getElementById("signinnav");
 
- 
 //   if (localStorage.getItem("loggedIn") === "true") {
 //     localStorage.setItem("loggedIn", "true");
 //     signUpBtn.style.display = "none";
@@ -70,18 +69,17 @@ signbtn.onclick = function () {
 //   }
 // };
 
-
-  if (localStorage.getItem("loggedIn") === "true") {
-        localStorage.setItem("loggedIn", "true");
-        window.onload = function () {
-          document.getElementById("navuser").style.display = "block";
-          document.getElementById("signout").style.display = "none";
-          document.getElementById("signinnav").style.display = "none";
-        };
-      } else {
-        window.onload = function () {
-          document.getElementById("navuser").style.display = "none";
-          document.getElementById("signout").style.display = "block";
-          document.getElementById("signinnav").style.display = "block";
-        };
-      }
+if (localStorage.getItem("loggedIn") === "true") {
+  localStorage.setItem("loggedIn", "true");
+  window.onload = function () {
+    document.getElementById("navuser").style.display = "block";
+    document.getElementById("signout").style.display = "none";
+    document.getElementById("signinnav").style.display = "none";
+  };
+} else {
+  window.onload = function () {
+    document.getElementById("navuser").style.display = "none";
+    document.getElementById("signout").style.display = "block";
+    document.getElementById("signinnav").style.display = "block";
+  };
+}

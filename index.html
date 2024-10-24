@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="./assets/images/icon.png" />
     <title>Travo</title>
   </head>
   <body>
@@ -25,8 +40,7 @@
     <section>
       <div class="section1-v">
         <video autoplay muted loop class="v-background w-100 h-100">
-          <source
-            src="images/mixkit-landscape-of-a-large-lake-during-sunset-from-the-air-4998-full-hd.mp4" />
+          <source src="images/mixkit-landscape-of-a-large-lake-during-sunset-from-the-air-4998-full-hd.mp4" />
         </video>
 
         <div class="overlay"></div>
@@ -35,9 +49,7 @@
       <div class="top-content">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand" href="#"
-              ><img src="images/logolight.svg" alt="" width="130px"
-            /></a>
+            <a class="navbar-brand" href="/"><img src="./assets/images/logolight.svg" alt="" width="130" /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -45,42 +57,31 @@
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
-              aria-label="Toggle navigation">
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#blogs">Blogs</a>
+                  <a class="nav-link" href="/pages/blogs.html">Blogs</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#tips">Tips</a>
                 </li>
               </ul>
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn signup me-md-2" type="button" id="signout">
-                  Sign Up
-                </button>
-                <button
-                  class="btn login btn-outline"
-                  id="signinnav"
-                  type="button">
-                  Log in
-                </button>
-                <a href="#" id="navuser">
+                <button class="btn signup me-md-2" type="button" id="signout">Sign Up</button>
+                <button class="btn login btn-outline" id="signinnav" type="button">Log in</button>
+                <a href="/pages/profile.html" id="navuser">
                   <div class="name-img">
-                    <img
-                      src="images/blank-profile-picture-973460_640.png"
-                      class=""
-                      alt="" /></div
+                    <img src="./assets/images/blank-profile-picture-973460_640.png" class="" alt="" /></div
                 ></a>
               </div>
             </div>
@@ -104,26 +105,22 @@
             <div class="content2">
               <h2>about <span>travo</span></h2>
               <p>
-                At Travo, we’re passionate explorers on a mission to inspire and
-                guide your travels. From bustling cities to hidden escapes, we
-                share firsthand experiences, practical tips, and in-depth
-                destination guides to make your adventures memorable and
-                stress-free. Whether you're a seasoned traveler or just planning
-                your first trip, our blog offers insights into the best places
-                to visit, local culture, food, and sustainable travel practices.
-                Join us as we discover the world, one journey at a time!
+                At Travo, we’re passionate explorers on a mission to inspire and guide your travels. From bustling
+                cities to hidden escapes, we share firsthand experiences, practical tips, and in-depth destination
+                guides to make your adventures memorable and stress-free. Whether you're a seasoned traveler or just
+                planning your first trip, our blog offers insights into the best places to visit, local culture, food,
+                and sustainable travel practices. Join us as we discover the world, one journey at a time!
               </p>
-              <button type="button" class="btn btn2 btn-outline-success">
-                Explore Travel
-              </button>
+              <button type="button" class="btn btn2 btn-outline-success">Explore Travel</button>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left">
             <div class="img2">
               <img
-                src="images/rear-view-back-young-asian-hiking-man-standing-riseup-hands-with-happy-peak-rocky-mountain-copy-space.jpg"
-                alt="" />
+                src="./assets/images/rear-view-back-young-asian-hiking-man-standing-riseup-hands-with-happy-peak-rocky-mountain-copy-space.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -140,13 +137,10 @@
           <!-- <p class="p-1">Discover our newest adventures</p> -->
           <h2>Latest Travel<span> Blogs</span></h2>
           <p class="p-2">
-            Stay updated with our most recent posts to fuel your wanderlust and
-            get the latest insights on must-see destinations, travel hacks, and
-            unique cultural experiences.
+            Stay updated with our most recent posts to fuel your wanderlust and get the latest insights on must-see
+            destinations, travel hacks, and unique cultural experiences.
           </p>
-          <button type="button" class="btn btn2 swip-btn btn-outline-success">
-            All Blogs
-          </button>
+          <button type="button" class="btn btn2 swip-btn btn-outline-success">All Blogs</button>
         </div>
 
         <div class="swiper mySwiper">
@@ -156,14 +150,12 @@
                 <img
                   src="images/path-overgrown-with-plants-that-no-one-walks.jpg"
                   class="card-img-top h-75"
-                  alt="..." />
+                  alt="..."
+                />
                 <div class="blog-body p-3">
                   <div class="name d-flex">
                     <div class="name-img">
-                      <img
-                        src="images/blank-profile-picture-973460_640.png"
-                        class=""
-                        alt="" />
+                      <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
                     </div>
                     <div class="name-text">
                       <p class="the-name">Eman Reda</p>
@@ -172,8 +164,8 @@
                   </div>
                   <h5 class="card-title">Lebanon: A Land of Nature</h5>
                   <p class="card-text">
-                    Lebanon, a small country on the eastern Mediterranean, is a
-                    hidden gem waiting to be explored. With its rich history....
+                    Lebanon, a small country on the eastern Mediterranean, is a hidden gem waiting to be explored. With
+                    its rich history....
                   </p>
                   <hr />
                   <div class="d-flex react justify-content-between">
@@ -194,14 +186,12 @@
                 <img
                   src="images/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg"
                   class="card-img-top h-75"
-                  alt="..." />
+                  alt="..."
+                />
                 <div class="blog-body p-3">
                   <div class="name d-flex">
                     <div class="name-img">
-                      <img
-                        src="images/blank-profile-picture-973460_640.png"
-                        class=""
-                        alt="" />
+                      <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
                     </div>
                     <div class="name-text">
                       <p class="the-name">Eman Reda</p>
@@ -210,8 +200,8 @@
                   </div>
                   <h5 class="card-title">Lebanon: A Land of Nature</h5>
                   <p class="card-text">
-                    Lebanon, a small country on the eastern Mediterranean, is a
-                    hidden gem waiting to be explored. With its rich history....
+                    Lebanon, a small country on the eastern Mediterranean, is a hidden gem waiting to be explored. With
+                    its rich history....
                   </p>
                   <hr />
                   <div class="d-flex react justify-content-between">
@@ -229,17 +219,11 @@
             </div>
             <div class="swiper-slide">
               <div class="blog-post">
-                <img
-                  src="images/144956.jpg"
-                  class="card-img-top h-75"
-                  alt="..." />
+                <img src="images/144956.jpg" class="card-img-top h-75" alt="..." />
                 <div class="blog-body p-3">
                   <div class="name d-flex">
                     <div class="name-img">
-                      <img
-                        src="images/blank-profile-picture-973460_640.png"
-                        class=""
-                        alt="" />
+                      <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
                     </div>
                     <div class="name-text">
                       <p class="the-name">Eman Reda</p>
@@ -248,8 +232,8 @@
                   </div>
                   <h5 class="card-title">Lebanon: A Land of Nature</h5>
                   <p class="card-text">
-                    Lebanon, a small country on the eastern Mediterranean, is a
-                    hidden gem waiting to be explored. With its rich history....
+                    Lebanon, a small country on the eastern Mediterranean, is a hidden gem waiting to be explored. With
+                    its rich history....
                   </p>
                   <hr />
                   <div class="d-flex react justify-content-between">
@@ -267,17 +251,11 @@
             </div>
             <div class="swiper-slide">
               <div class="blog-post">
-                <img
-                  src="images/144956.jpg"
-                  class="card-img-top h-75"
-                  alt="..." />
+                <img src="images/144956.jpg" class="card-img-top h-75" alt="..." />
                 <div class="blog-body p-3">
                   <div class="name d-flex">
                     <div class="name-img">
-                      <img
-                        src="images/blank-profile-picture-973460_640.png"
-                        class=""
-                        alt="" />
+                      <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
                     </div>
                     <div class="name-text">
                       <p class="the-name">Eman Reda</p>
@@ -286,8 +264,8 @@
                   </div>
                   <h5 class="card-title">Lebanon: A Land of Nature</h5>
                   <p class="card-text">
-                    Lebanon, a small country on the eastern Mediterranean, is a
-                    hidden gem waiting to be explored. With its rich history....
+                    Lebanon, a small country on the eastern Mediterranean, is a hidden gem waiting to be explored. With
+                    its rich history....
                   </p>
                   <hr />
                   <div class="d-flex react justify-content-between">
@@ -308,14 +286,12 @@
                 <img
                   src="images/path-overgrown-with-plants-that-no-one-walks.jpg"
                   class="card-img-top h-75"
-                  alt="..." />
+                  alt="..."
+                />
                 <div class="blog-body p-3">
                   <div class="name d-flex">
                     <div class="name-img">
-                      <img
-                        src="images/blank-profile-picture-973460_640.png"
-                        class=""
-                        alt="" />
+                      <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
                     </div>
                     <div class="name-text">
                       <p class="the-name">Eman Reda</p>
@@ -324,8 +300,8 @@
                   </div>
                   <h5 class="card-title">Lebanon: A Land of Nature</h5>
                   <p class="card-text">
-                    Lebanon, a small country on the eastern Mediterranean, is a
-                    hidden gem waiting to be explored. With its rich history....
+                    Lebanon, a small country on the eastern Mediterranean, is a hidden gem waiting to be explored. With
+                    its rich history....
                   </p>
                   <hr />
                   <div class="d-flex react justify-content-between">
@@ -343,17 +319,11 @@
             </div>
             <div class="swiper-slide">
               <div class="blog-post">
-                <img
-                  src="images/river-5578051_1280.jpg"
-                  class="card-img-top h-75"
-                  alt="..." />
+                <img src="./assets/images/river-5578051_1280.jpg" class="card-img-top h-75" alt="..." />
                 <div class="blog-body p-3">
                   <div class="name d-flex">
                     <div class="name-img">
-                      <img
-                        src="images/blank-profile-picture-973460_640.png"
-                        class=""
-                        alt="" />
+                      <img src="images/blank-profile-picture-973460_640.png" class="" alt="" />
                     </div>
                     <div class="name-text">
                       <p class="the-name">Eman Reda</p>
@@ -362,8 +332,8 @@
                   </div>
                   <h5 class="card-title">Lebanon: A Land of Nature</h5>
                   <p class="card-text">
-                    Lebanon, a small country on the eastern Mediterranean, is a
-                    hidden gem waiting to be explored. With its rich history....
+                    Lebanon, a small country on the eastern Mediterranean, is a hidden gem waiting to be explored. With
+                    its rich history....
                   </p>
                   <hr />
                   <div class="d-flex react justify-content-between">
@@ -392,9 +362,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="tip-img">
-                <img
-                  src="images/female-tourists-hand-have-happy-travel-map.jpg"
-                  alt="" />
+                <img src="./assets/images/female-tourists-hand-have-happy-travel-map.jpg" alt="" />
               </div>
             </div>
             <div class="tip-content col-lg-6">
@@ -404,45 +372,27 @@
               <ul>
                 <li class="d-flex">
                   <i class="fa-brands fa-font-awesome tip-icon"></i>
-                  <p>
-                    Save Money: Learn how to book flights and accommodations at
-                    discounted rates.
-                  </p>
+                  <p>Save Money: Learn how to book flights and accommodations at discounted rates.</p>
                 </li>
                 <li class="d-flex">
                   <i class="fa-brands fa-font-awesome tip-icon"></i>
-                  <p>
-                    Smart Packing: Tips for packing efficiently to save space
-                    and avoid excess weight.
-                  </p>
+                  <p>Smart Packing: Tips for packing efficiently to save space and avoid excess weight.</p>
                 </li>
                 <li class="d-flex">
                   <i class="fa-brands fa-font-awesome tip-icon"></i>
-                  <p>
-                    Plan Ahead: How to create a detailed itinerary to make the
-                    most of every day.
-                  </p>
+                  <p>Plan Ahead: How to create a detailed itinerary to make the most of every day.</p>
                 </li>
                 <li class="d-flex">
                   <i class="fa-brands fa-font-awesome tip-icon"></i>
-                  <p>
-                    Easy Navigation: Advice on using public transport and
-                    getting around big cities.
-                  </p>
+                  <p>Easy Navigation: Advice on using public transport and getting around big cities.</p>
                 </li>
                 <li class="d-flex">
                   <i class="fa-brands fa-font-awesome tip-icon"></i>
-                  <p>
-                    Cultural Awareness: Guidelines for respectful interactions
-                    and understanding local customs.
-                  </p>
+                  <p>Cultural Awareness: Guidelines for respectful interactions and understanding local customs.</p>
                 </li>
                 <li class="d-flex">
                   <i class="fa-brands fa-font-awesome tip-icon"></i>
-                  <p>
-                    Stay Safe: Tips to keep yourself and your belongings secure
-                    while traveling.
-                  </p>
+                  <p>Stay Safe: Tips to keep yourself and your belongings secure while traveling.</p>
                 </li>
               </ul>
             </div>
@@ -459,14 +409,11 @@
           <div class="post-cont">
             <h2>Share Your Travel Experience!</h2>
             <p>
-              Have an amazing travel adventure you'd love to share? We want to
-              hear your story! Write about your journey, upload your photos, and
-              share your tips with our community.
+              Have an amazing travel adventure you'd love to share? We want to hear your story! Write about your
+              journey, upload your photos, and share your tips with our community.
             </p>
 
-            <button type="button" class="btn btn2 btn-outline-success">
-              Join Us
-            </button>
+            <button type="button" class="btn btn2 btn-outline-success">Join Us</button>
           </div>
         </div>
       </div>
@@ -482,7 +429,7 @@
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#tips">Tips</a>
-            <a href="#blogs">Blogs</a>
+            <a href="/pages/blogs.html">Blogs</a>
           </div>
         </div>
         <hr />
@@ -497,9 +444,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="JS/script.js"></script>
-    <script src="JS/login.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
     <script>
       AOS.init();
     </script>
