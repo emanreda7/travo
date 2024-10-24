@@ -252,6 +252,62 @@ hr {
 }
 /* __________________________________________ end footer _____________________________________________ */
 /* _______________________________________ start tips section __________________________________ */
+/* .tips {
+  margin-top: 30px;
+  margin-bottom: 80px;
+
+  min-height: 600px;
+}
+.tip-img {
+  max-width: 600px;
+
+  margin-left: -100px;
+}
+.tip-img img {
+  width: 98%;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .tip-img {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .tip-content h2,
+  .tip-content .top-p {
+    text-align: center;
+  }
+}
+.tip-content {
+  padding-left: 16px;
+  color: var(--title-color);
+}
+.tip-content p,
+li {
+  color: var(--text-color);
+}
+.tip-content li {
+  font-size: 18px;
+}
+.tip-content li .tip-icon {
+  color: #65b741;
+  margin-right: 16px;
+  margin-top: 6px;
+}
+.tip-content ul {
+  list-style-type: none;
+}
+.tip-backg {
+  position: relative;
+  border: 8px solid #65b741;
+
+  padding: 30px 30px;
+}
+.tip-content .top-p {
+  color: #f3ca52;
+}
+.tip-content h2 {
+  margin-bottom: 24px;
+} */
 .tips {
   margin-top: 30px;
   margin-bottom: 80px;
@@ -309,10 +365,7 @@ li {
   margin-bottom: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-}
-@media (min-width: 481px) and (max-width: 768px) {
-}
+
 
 /* ______________________________________________ end tips section ________________________________ */
 
