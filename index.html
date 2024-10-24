@@ -454,9 +454,7 @@
       document.getElementById("allblog").onclick = function () {
         window.location.href = "pages/blogs.html";
       };
-        document.getElementById("navuser").onclick = function () {
-        window.location.href = "pages/profile.html";
-      };
+       
       
       if (localStorage.getItem("loggedIn") === "true") {
         localStorage.setItem("loggedIn", "true");
@@ -472,6 +470,9 @@
           document.getElementById("signinnav").style.display = "block";
         };
       }
+       document.getElementById("navuser").onclick = function () {
+        window.location.href = "pages/profile.html";
+      };
     </script>
   </body>
 </html>
