@@ -3,6 +3,7 @@ aside {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  padding-right: 1rem;
 }
 
 aside section {
@@ -19,7 +20,7 @@ aside section {
 
 .section-title span {
   padding: 0.25rem 0;
-  background: var(--colors-light-green);
+  background: #f3ca52;
   color: var(--title-color);
 }
 

@@ -119,11 +119,11 @@ main {
   text-decoration: none;
   border-radius: 5px;
   color: var(--colors-nero-black);
-  background-color: var(--colors-gray);
+  background-color: #65b741;
 }
 
 .btn-card:hover {
-  background-color: var(--title-color);
+  background-color: var(--colors-gray);
   color: var(--colors-lucky-gray);
 }
 
